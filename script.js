@@ -24,6 +24,8 @@ for (let index = 0; index < 64; index++) {
     container.appendChild(row);
     
 }
+document.querySelector('.content').insertBefore(rangeValue, buttons)
+
 
 boxRange.addEventListener('click', function() {
     rangeValue.textContent = `${boxRange.value} × ${boxRange.value}`;
@@ -47,8 +49,6 @@ boxRange.addEventListener('click', function() {
         
     }
 })
-
-document.querySelector('.content').insertBefore(rangeValue, buttons)
 
 button.addEventListener('click', function () {
     boxRange.addEventListener('click', function() {
