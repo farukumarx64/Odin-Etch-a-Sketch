@@ -6,6 +6,7 @@ const buttons = document.querySelector('.buttons')
 const rainbow = document.querySelector('.rainbow')
 
 rangeValue.textContent = `${boxRange.value} × ${boxRange.value}`;
+console.log(boxRange.value)
 let row, box;
 
 for (let index = 0; index < 64; index++) {
